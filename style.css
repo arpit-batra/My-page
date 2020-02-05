@@ -1,7 +1,6 @@
 #container{
-	width: 75%;
+	width: 73%;
 	height: 100%;
-	position: absolute;
 }
 
 #todoBox{
@@ -13,31 +12,71 @@
 	top: 0px;
 	margin:10px;
 	background-color: #480961;
-	border-radius: 10px;
+	border-radius:10px;
 	padding:10px;
 
 }
 
 ul.list{
 	width:100%;
+	height:100%;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	position: absolute;
 }
 
 ul.list li{
-	width:auto;
-	height:auto;
+	width:82%;
+	height:50px;
 	margin:10px;
 	background-color: #f7fcac;
 	border-radius: 5px;
 	padding: 10px;
 	font-family:'Indie Flower', cursive;
-	font-size: 25px;
+	font-size: 22px;
+	position: absolute;
 }
 
 ul.list li button{
-	width:20px ;
-	height: 10px;
-	background-color: #4287f5;
+	width: 40px;
+	height: 75%;
+	margin:10px;
+	transition-duration: 0.5s;
+	border-radius: 0;
+	box-shadow: none;
+	outline: none;
+	border: 0px;
+	opacity: 100%;
+	cursor: pointer;
+	background-color:#f7fcac;
+	border-radius: 5px;
+}
+
+
+
+ul.list li button.delete{
+	position: absolute;
+	right:45px;
+	top:0px;
+	background-image: url("delete.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+ul.list li button.delete:hover{
+		background-color:#f2070f; 
+}
+
+ul.list li button.done{
+	position: absolute;
+	right: 0px;
+	top:0px;
+	background-image: url("tick.png");
+	background-repeat: no-repeat;
+	background-size: 80%;
+}
+
+ul.list li button.done:hover{
+	background-color: #09d102;
 }
