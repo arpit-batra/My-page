@@ -22,8 +22,39 @@ ul.list{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	position: absolute;
+	position: relative;
 }
+
+#doneList li{
+	width:58%;
+	min-height: 50px;
+	margin:10px;
+	background-color: #5bb580;
+	border-radius: 5px;
+	padding: 10px 90px 10px 10px;
+	font-family:'Indie Flower', cursive;
+	font-size: 22px;
+	position: relative;
+	float: left;
+	text-decoration: line-through;
+}
+
+#doneList li button{
+	width: 40px;
+	height: 45px;
+	margin:10px;
+	transition-duration: 0.5s;
+	border-radius: 0;
+	box-shadow: none;
+	outline: none;
+	border: 0px;
+	opacity: 100%;
+	cursor: pointer;
+	background-color:#5bb580;
+	border-radius: 5px;
+}
+
+
 
 ul.list li{
 	width:58%;
@@ -107,4 +138,16 @@ ul.list li button.done:hover{
 	-moz-transform:rotate(45deg);
 	-o-transform:rotate(45deg);
 	transform: rotate(45deg);
+}
+
+#doneList li:first-of-type:before{
+	content: '';
+	width: 50%;
+	height: 1px;
+	background-color: #ffffff;
+	position: absolute;
+
+	top: -20px;
+	left: 60px;
+	margin:9px;
 }
